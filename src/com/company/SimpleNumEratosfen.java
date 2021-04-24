@@ -4,7 +4,7 @@ import static java.lang.String.format;
 
 public class SimpleNumEratosfen {
     static long m0 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-    //static int MAX_VAL = 100; //2_000_000;
+    //static int MAX_VAL = 2_000_000;
     static int MAX_VAL = Integer.MAX_VALUE;
     static long sqrtMaxVal = (long) Math.sqrt(MAX_VAL);
     static byte[] arrGrid = new byte[MAX_VAL / 8 + 1];
@@ -19,8 +19,6 @@ public class SimpleNumEratosfen {
                 }
             }
         }
-        // подсчет памяти
-        //Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory()
 
         long searchTime = System.currentTimeMillis() - t0;
         long useMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - m0;

@@ -2,7 +2,7 @@ package com.company;
 
 public class SimlpleNumEratosfenLessMemory {
     static long m0 = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-    //static int MAX_VAL = 100; //2_000_000;
+    //static int MAX_VAL = 2_000_000;
     static int MAX_VAL = Integer.MAX_VALUE;
     static long sqrtMaxVal = (long) Math.sqrt(MAX_VAL);
     static byte[] arrGrid = new byte[MAX_VAL / 16 + 1];
