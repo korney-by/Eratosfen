@@ -78,10 +78,6 @@ public class SimlpleNumEratosfenLessMemory {
         }
     }
 
-    private static String getTime(long timeInMsec) {
-        return String.format("%d.%d сек", timeInMsec / 1000, timeInMsec % 1000);
-    }
-
     private static long getCountSimple() {
         long result = 1;
         for (long i = 3; i <= MAX_VAL; i += 2) {
