@@ -12,10 +12,10 @@ public class SimlpleNumEratosfenLessMemory {
 
 
         setStatusNoSimple(0); // it's for 2
-        //индексы соответствуют числам
+        //indices correspond to numbers
         for (long i = 3; i <= sqrtMaxVal; i += 2) {
             if (getStatus(i) == 0) { //if simple
-                for (long j = (i * i); j <= MAX_VAL; j = j + i) { // oll eveh it
+                for (long j = (i * i); j <= MAX_VAL; j = j + i) { // here all numbers is odd
                     setStatusNoSimple(j);
                 }
             }
@@ -24,7 +24,7 @@ public class SimlpleNumEratosfenLessMemory {
         long searchTime = System.currentTimeMillis() - t0;
         long useMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - m0;
         System.out.printf("Time search: %d.%d sec\n", searchTime / 1000, searchTime % 1000);
-        System.out.printf("Use memory: %d.%d Mb \n", useMemory / (1024 * 1024), (useMemory % (1024 * 1024))/1024);
+        System.out.printf("Use memory: %d.%d Mb \n", useMemory / (1024 * 1024), (useMemory % (1024 * 1024)) / 1024);
         long count = getCountSimple();
         System.out.println("Found: " + count);
         if (count < 50) {

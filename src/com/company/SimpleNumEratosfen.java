@@ -11,7 +11,7 @@ public class SimpleNumEratosfen {
 
     public static void main(String[] args) {
         long t0 = System.currentTimeMillis();
-        //индексы соответствуют числам
+        //indices correspond to numbers
         for (long i = 2; i < sqrtMaxVal; i++) {
             if (getStatus(i) == 0) {
                 for (long j = (i * i); j <=MAX_VAL; j = j + i) {
